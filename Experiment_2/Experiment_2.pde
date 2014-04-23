@@ -2,7 +2,7 @@ import de.bezier.data.*;
 import java.util.*;
 
 void setup ()
-{
+{ash
     size( 600, 400 );
 
     noStroke();
