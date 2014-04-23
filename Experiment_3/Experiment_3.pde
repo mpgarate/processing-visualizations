@@ -14,7 +14,20 @@ void draw() {
 
 void getArticles(){
 
-    String request = baseURL + "begin_date=20140423&end_date=20140424&api-key=" + apiKey;
+    String y = year() + "";
+    String d = day() + "";
+    String m = month() + "";
+
+    if (d.length() == 1){
+        d = "0" + d;
+    }
+    if (m.length() == 1){
+        m = "0" + m;
+    }
+
+    String date_today = y + m + d;
+
+    String request = baseURL + "begin_date=" + date_today + "&end_date=" + date_today + "&api-key=" + apiKey;
 
     println(request);
 
