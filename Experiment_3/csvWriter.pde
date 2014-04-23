@@ -35,9 +35,12 @@ void writeJSONtoCSV(JSONObject jsonData){
     for (int j = 0; j < articles.length; j++){
       a2 = articles[j];
 
-      if (a1.hasCommonWordWith(a2)){
+      // a1 and a2 not the same element
+      // and they have a word in common
+      if (i != j && a1.hasCommonWordWith(a2)){
         //OUTPUT.print(a1.getTitle() + " : " + a2.getTitle());
         OUTPUT.print(a2.getID() + ",");
+        //println("common word:" + a1.commonWordWith(a2));
       }
       else{
         OUTPUT.print(",");

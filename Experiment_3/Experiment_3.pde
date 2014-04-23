@@ -1,5 +1,8 @@
 
 void setup(){
+    // prepare stopwords
+    prepareStopwords();
+
     // prepare NYT data
     
     // fetch data as json from API

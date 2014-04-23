@@ -15,8 +15,19 @@ class Article{
     wordsArr = wordsStr.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
 
     for (String word : wordsArr){
-      words.put(word,true);
+      if ((word.length() > 2) && (isNotStopword(word))){
+        words.put(word,true);
+      }
     }
+  }
+
+  public String commonWordWith(Article other_article){
+    for (String word : wordsArr){
+      if (other_article.hasWord(word)){
+        return word;
+      }
+    }
+    return null;
   }
 
   public Boolean hasCommonWordWith(Article other_article){
