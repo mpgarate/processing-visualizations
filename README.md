@@ -1,4 +1,4 @@
-processing-visualizations
+Visualizations in Processing
 =========================
 
 Data Visualizations in Processing
