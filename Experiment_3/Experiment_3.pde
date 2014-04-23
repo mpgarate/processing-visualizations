@@ -1,27 +1,34 @@
-import org.json.*;
+//import org.json.*;
 
 String apiKey = "d7ed4fe0d47715c66dc048c98c282319:15:69301670";
 
 String baseURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
 void setup() {
-    getArticles("");
+    getArticles();
 }
 
 void draw() {
 
 }
 
-void getArticles(String query){
-    query.replace(" ", "+");
+void getArticles(){
 
     String request = baseURL + "begin_date=20140423&end_date=20140424&api-key=" + apiKey;
 
     println(request);
 
-    String result = join( loadStrings( request ), "");
+    //String result = join( loadStrings( request ), "");
 
-    println( result );
+    //println( result );
+
+    JSONObject nytData = loadJSONObject(request);
+    JSONObject results = nytData.getJSONObject("response").getJSONObject("meta");
+    println(nytData);
+    int total = results.getInt("hits");
+    println ("There have been " + total + " articles so far today.");
+        
+
 }
 
 // http://api.nytimes.com/svc/search/v1/article?query=O.J.+Simpson&begin_date=19940101&end_date=19960101&api-key=d7ed4fe0d47715c66dc048c98c282319:15:69301670
