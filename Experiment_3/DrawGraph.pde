@@ -197,7 +197,10 @@ class PolarGraph {
       for (int i=ord+1;i<nElem;i++){
         pesoT+=(rels[i]=t.getInt(ord+1,i+1));
       }
-      amp  =(PI*pesoT/pesoT_T);               //make amplitude proportional to total weight of relationships       
+      //amp  =(PI*pesoT/pesoT_T);               //make amplitude proportional to total weight of relationships     
+      //amp = 0.2;  
+      println("pesoT_T: " + pesoT_T + " pesoT:" + pesoT + " nElem: " + nElem);
+      amp = (2 * PI/nElem);
       group=t.getInt(ord+1,nElem+1);          //get rest of info from the table directly
       name =t.getString(ord+1,nElem+2);
       info  =t.getString(ord+1,nElem+3); 

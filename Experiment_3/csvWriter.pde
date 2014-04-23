@@ -1,13 +1,6 @@
 void writeJSONtoCSV(LinkedList<JSONObject> jsonPages){
   PrintWriter OUTPUT = createWriter("nytData.csv");
 
-  /*
-  for(int i = 0; i < pointList.size(); ++i){        
-    PVector V = (PVector) pointList.get(i);
-    OUTPUT.println(V.x + "" + V.y + "," + V.z);  // here we export the coordinates of the vector using String concatenation!
-  }
-  */
-
   LinkedList<Article> articleList = new LinkedList<Article>();
 
   for (JSONObject jsonData : jsonPages){
@@ -57,7 +50,9 @@ void writeJSONtoCSV(LinkedList<JSONObject> jsonPages){
       }
 
     }
-    OUTPUT.print("1,");
+
+    OUTPUT.print("0,");
+
     OUTPUT.print("\"" + a1.getTitle() + "\",");
     OUTPUT.print("other");
     OUTPUT.println();
