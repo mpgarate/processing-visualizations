@@ -35,5 +35,5 @@ JSONObject getTodaysArticles(){
     int total = results.getInt("hits");
     println ("There have been " + total + " articles so far today.");
     
-    return results;
+    return nytData;
 }

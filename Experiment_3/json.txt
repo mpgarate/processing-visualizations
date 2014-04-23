@@ -1,0 +1,328 @@
+{
+  "response": {
+    "docs": [
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "APNewsBreak: Oklahoma Court Could Face Impeachment",
+          "main": "APNewsBreak: Oklahoma Court Could Face Impeachment"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:38:14Z",
+        "web_url": "http://www.nytimes.com/aponline/2014/04/23/us/ap-us-execution-drugs-oklahoma-lawsuit.html",
+        "news_desk": "None",
+        "snippet": "A member of the Oklahoma House is drafting a resolution seeking the impeachment of state Supreme Court justices who granted a delay of execution to two death-row inmates.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "U.S.",
+        "document_type": "article",
+        "byline": {
+          "organization": "THE ASSOCIATED PRESS",
+          "person": [],
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "535816fa7988103a2498b04d",
+        "source": "AP",
+        "word_count": "131",
+        "lead_paragraph": "A member of the Oklahoma House is drafting a resolution seeking the impeachment of state Supreme Court justices who granted a delay of execution to two death-row inmates."
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "Buffett Says He Abstained From Coca-Cola Shareholder Vote on Executive Compensation",
+          "main": "Buffett Says He Abstained From Coca-Cola Shareholder Vote on Executive Compensation"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:37:20Z",
+        "web_url": "http://www.nytimes.com/reuters/2014/04/23/business/23reuters-buffett-interview-cnbc.html",
+        "news_desk": "None",
+        "snippet": "Warren Buffett, chairman of conglomerate Berkshire Hathaway, told CNBC on Wednesday he thinks Coca-Cola's controversial equity compensation plan was excessive, but Berkshire Hathaway abstained in the shareholders vote.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "Business Day",
+        "document_type": "article",
+        "byline": {
+          "organization": "REUTERS",
+          "person": [],
+          "original": "By REUTERS"
+        },
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "535816ea7988103a2498b04c",
+        "source": "Reuters",
+        "word_count": "113",
+        "lead_paragraph": "Warren Buffett, chairman of conglomerate Berkshire Hathaway, told CNBC on Wednesday he thinks Coca-Cola's controversial equity compensation plan was excessive, but Berkshire Hathaway abstained in the shareholders vote."
+      },
+      {
+        "abstract": "A day in the life of armed America.",
+        "headline": {
+          "kicker": "Joe Nocera",
+          "main": "The Gun Report: April 23, 2014"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:37:20Z",
+        "web_url": "http://nocera.blogs.nytimes.com/2014/04/23/the-gun-report-april-23-2014/",
+        "news_desk": "OpEd",
+        "snippet": "A day in the life of armed America.",
+        "type_of_material": "Blog",
+        "blog": [],
+        "section_name": "Opinion",
+        "document_type": "blogpost",
+        "byline": {
+          "person": [{
+            "rank": 1,
+            "organization": "",
+            "lastname": "MASCIA",
+            "role": "reported",
+            "firstname": "Jennifer"
+          }],
+          "original": "By JENNIFER MASCIA"
+        },
+        "subsection_name": null,
+        "multimedia": [
+          {
+            "height": 126,
+            "subtype": "wide",
+            "width": 190,
+            "type": "image",
+            "url": "images/2014/04/23/opinion/georgia/georgia-thumbWide.png",
+            "legacy": {
+              "wideheight": "126",
+              "widewidth": "190",
+              "wide": "images/2014/04/23/opinion/georgia/georgia-thumbWide.png"
+            }
+          },
+          {
+            "height": 375,
+            "subtype": "xlarge",
+            "width": 600,
+            "type": "image",
+            "url": "images/2014/04/23/opinion/georgia/georgia-articleLarge.png",
+            "legacy": {
+              "xlargeheight": "375",
+              "xlarge": "images/2014/04/23/opinion/georgia/georgia-articleLarge.png",
+              "xlargewidth": "600"
+            }
+          },
+          {
+            "height": 75,
+            "subtype": "thumbnail",
+            "width": 75,
+            "type": "image",
+            "url": "images/2014/04/23/opinion/georgia/georgia-thumbStandard.png",
+            "legacy": {
+              "thumbnail": "images/2014/04/23/opinion/georgia/georgia-thumbStandard.png",
+              "thumbnailwidth": "75",
+              "thumbnailheight": "75"
+            }
+          }
+        ],
+        "_id": "535816be7988103a2498b04a",
+        "source": "The New York Times",
+        "word_count": "1620",
+        "lead_paragraph": null
+      },
+      {
+        "abstract": null,
+        "headline": {"main": "Apple on Wall Street"},
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:36:26Z",
+        "web_url": null,
+        "news_desk": "Technology",
+        "snippet": null,
+        "type_of_material": "Interactive Feature",
+        "blog": [],
+        "section_name": "Technology",
+        "document_type": "multimedia",
+        "byline": [],
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "5358163f7988103a2498b046",
+        "source": "The New York Times",
+        "word_count": null,
+        "lead_paragraph": null
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "California Lawmakers, Bruised by Scandal, Turn to Ethics Training",
+          "main": "California Lawmakers, Bruised by Scandal, Turn to Ethics Training"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:35:51Z",
+        "web_url": "http://www.nytimes.com/reuters/2014/04/23/us/politics/23reuters-usa-politics-california.html",
+        "news_desk": "None",
+        "snippet": "California lawmakers, their reputation tarnished by fraud and corruption scandals, on Wednesday took a break from normal business to attend ethics training, the latest step by the state Senate to repair its image as elections loom.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "U.S.",
+        "document_type": "article",
+        "byline": {
+          "organization": "REUTERS",
+          "person": [],
+          "original": "By REUTERS"
+        },
+        "subsection_name": "Politics",
+        "multimedia": [],
+        "_id": "535816ea7988103a2498b04b",
+        "source": "Reuters",
+        "word_count": "431",
+        "lead_paragraph": "California lawmakers, their reputation tarnished by fraud and corruption scandals, on Wednesday took a break from normal business to attend ethics training, the latest step by the state Senate to repair its image as elections loom."
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "Gattis' Double Helps Braves Top Marlins 3-1",
+          "main": "Gattis' Double Helps Braves Top Marlins 3-1"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:35:25Z",
+        "web_url": "http://www.nytimes.com/aponline/2014/04/23/sports/baseball/ap-bbn-marlins-braves.html",
+        "news_desk": "None",
+        "snippet": "Pinch-hitter Evan Gattis broke an eighth-inning tie with a two-run double off A.J. Ramos, and the Atlanta Braves beat the Miami Marlins 3-1 Wednesday for their ninth win in 12 games.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "Sports",
+        "document_type": "article",
+        "byline": {
+          "organization": "THE ASSOCIATED PRESS",
+          "person": [],
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "subsection_name": "Baseball",
+        "multimedia": [],
+        "_id": "535816507988103a2498b048",
+        "source": "AP",
+        "word_count": "160",
+        "lead_paragraph": "Pinch-hitter Evan Gattis broke an eighth-inning tie with a two-run double off A.J. Ramos, and the Atlanta Braves beat the Miami Marlins 3-1 Wednesday for their ninth win in 12 games."
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "Connecticut Police Charge Man in Yale Gunman Hoax",
+          "main": "Connecticut Police Charge Man in Yale Gunman Hoax"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:34:32Z",
+        "web_url": "http://www.nytimes.com/reuters/2014/04/23/us/23reuters-usa-yale-lockdown.html",
+        "news_desk": "None",
+        "snippet": "A Connecticut man was charged Wednesday with threatening and reckless endangerment in connection with a hoax telephone call to Yale University last year claiming a gunman was going to shoot people at the Ivy League school, police said.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "U.S.",
+        "document_type": "article",
+        "byline": {
+          "organization": "REUTERS",
+          "person": [],
+          "original": "By REUTERS"
+        },
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "535816357988103a2498b045",
+        "source": "Reuters",
+        "word_count": "270",
+        "lead_paragraph": "A Connecticut man was charged Wednesday with threatening and reckless endangerment in connection with a hoax telephone call to Yale University last year claiming a gunman was going to shoot people at the Ivy League school, police said."
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "Sony Developing Live-Action Barbie Comedy",
+          "main": "Sony Developing Live-Action Barbie Comedy"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:33:21Z",
+        "web_url": "http://www.nytimes.com/aponline/2014/04/23/us/ap-us-film-barbie-movie.html",
+        "news_desk": "None",
+        "snippet": "Barbie is coming alive.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "U.S.",
+        "document_type": "article",
+        "byline": {
+          "organization": "THE ASSOCIATED PRESS",
+          "person": [],
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "535816507988103a2498b047",
+        "source": "AP",
+        "word_count": "119",
+        "lead_paragraph": "Barbie is coming alive."
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "California Mom, TSA Settle Breast Milk Lawsuit",
+          "main": "California Mom, TSA Settle Breast Milk Lawsuit"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:32:35Z",
+        "web_url": "http://www.nytimes.com/aponline/2014/04/23/us/ap-us-breast-milk-airport-lawsuit.html",
+        "news_desk": "None",
+        "snippet": "A Southern California woman who was held at a Phoenix airport four years ago after refusing to have her breast milk X-rayed has reached a settlement with the Transportation Security Administration.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "U.S.",
+        "document_type": "article",
+        "byline": {
+          "organization": "THE ASSOCIATED PRESS",
+          "person": [],
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "535815a07988103a2498b044",
+        "source": "AP",
+        "word_count": "130",
+        "lead_paragraph": "A Southern California woman who was held at a Phoenix airport four years ago after refusing to have her breast milk X-rayed has reached a settlement with the Transportation Security Administration."
+      },
+      {
+        "abstract": null,
+        "headline": {
+          "print_headline": "Commerzbank Considers Appeal After Court Setback Over Board Post",
+          "main": "Commerzbank Considers Appeal After Court Setback Over Board Post"
+        },
+        "keywords": [],
+        "print_page": null,
+        "pub_date": "2014-04-23T15:31:09Z",
+        "web_url": "http://www.nytimes.com/reuters/2014/04/23/business/23reuters-commerzbank-board-courts.html",
+        "news_desk": "None",
+        "snippet": "Commerzbank is considering appealing against a Frankfurt court's ruling that the lender's move last year to revoke the management board status of former personnel chief Ulrich Sieber was invalid.",
+        "type_of_material": "News",
+        "blog": [],
+        "section_name": "Business Day",
+        "document_type": "article",
+        "byline": {
+          "organization": "REUTERS",
+          "person": [],
+          "original": "By REUTERS"
+        },
+        "subsection_name": null,
+        "multimedia": [],
+        "_id": "535815897988103a2498b042",
+        "source": "Reuters",
+        "word_count": "231",
+        "lead_paragraph": "Commerzbank is considering appealing against a Frankfurt court's ruling that the lender's move last year to revoke the management board status of former personnel chief Ulrich Sieber was invalid."
+      }
+    ],
+    "meta": {
+      "time": 70,
+      "hits": 777,
+      "offset": 0
+    }
+  },
+  "status": "OK",
+  "copyright": "Copyright (c) 2013 The New York Times Company.  All Rights Reserved."
+}
