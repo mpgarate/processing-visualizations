@@ -3,16 +3,17 @@ class Article{
   private HashMap<String,Boolean> words = new HashMap<String,Boolean>();
   private String[] wordsArr;
   private int snippet_index = 7;
+  private String snippet;
 
   private String title;
 
   private int id;
 
   public Article(JSONObject jsonObj){
-    wordsStr = jsonObj.getString("snippet");
+    snippet = jsonObj.getString("snippet");
     title = jsonObj.getJSONObject("headline").getString("main");
 
-    wordsArr = wordsStr.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
+    wordsArr = snippet.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
 
     for (String word : wordsArr){
       if ((word.length() > 2) && (isNotStopword(word))){
@@ -60,5 +61,9 @@ class Article{
 
   public int getID(){
     return this.id;
+  }
+
+  public String getSnippet(){
+    return this.snippet;
   }
 }

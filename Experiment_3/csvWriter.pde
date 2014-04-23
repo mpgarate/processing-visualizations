@@ -27,23 +27,29 @@ void writeJSONtoCSV(LinkedList<JSONObject> jsonPages){
   for (int i = 0; i < articles.length; i++){
     OUTPUT.print("," + i);
   }
-  OUTPUT.println(",Type,Title,other");
+  OUTPUT.println(",Type,Title,snippet,common words");
 
   // print lines for each article
   Article a1;
   Article a2;
+  StringBuilder sb;
+
   for (int i = 0; i < articles.length; i++){
     a1 = articles[i];
+    sb = new StringBuilder();
+    sb.append("Common words: ");
     OUTPUT.print(i + ",");
     for (int j = 0; j < articles.length; j++){
       a2 = articles[j];
 
       // a1 and a2 not the same element
       // and they have a word in common
-      if (i != j && a1.hasCommonWordWith(a2)){
+      if (a1 != a2 && a1.hasCommonWordWith(a2)){
         //OUTPUT.print(a1.getTitle() + " : " + a2.getTitle());
         OUTPUT.print(a2.getID() + ",");
-        //println("common word:" + a1.commonWordWith(a2));
+
+        sb.append(a1.commonWordWith(a2));
+        sb.append(",");
       }
       else{
         OUTPUT.print(",");
@@ -52,9 +58,9 @@ void writeJSONtoCSV(LinkedList<JSONObject> jsonPages){
     }
 
     OUTPUT.print("0,");
-
     OUTPUT.print("\"" + a1.getTitle() + "\",");
-    OUTPUT.print("other");
+    //OUTPUT.print("\"" + a1.getSnippet().replace(",","\",\"") + "\"");
+    //OUTPUT.print("\"" + sb.toString() + "\"");
     OUTPUT.println();
   }
 

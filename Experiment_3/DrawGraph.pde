@@ -100,7 +100,7 @@ class PolarGraph {
     b.fill(cR25);
     for (int i=0;i<P.length;i++){   //draw the names
       b.rotate(P[i].getAmp()*.5);
-      b.text(P[i].getElemName(),R1,0);
+      //b.text(P[i].getElemName(),R1,0);
       b.rotate(P[i].getAmp()*.5);
     } 
     b.endDraw();
@@ -126,7 +126,7 @@ class PolarGraph {
     translate (posX,posY);
     rotate(atan2((P[i].getYc()-posY),(P[i].getXc()-posX)));
     fill(#000000,cR75);                                //overwrite the text of the base, I dont like this much but I was lazy to change it
-    text(P[i].getElemName(),R1,0);
+    //text(P[i].getElemName(),R1,0);
     popMatrix();
     doConnections(i,color(cR25,cR75));                 //draw connections
   }
@@ -199,7 +199,6 @@ class PolarGraph {
       }
       //amp  =(PI*pesoT/pesoT_T);               //make amplitude proportional to total weight of relationships     
       //amp = 0.2;  
-      println("pesoT_T: " + pesoT_T + " pesoT:" + pesoT + " nElem: " + nElem);
       amp = (2 * PI/nElem);
       group=t.getInt(ord+1,nElem+1);          //get rest of info from the table directly
       name =t.getString(ord+1,nElem+2);
