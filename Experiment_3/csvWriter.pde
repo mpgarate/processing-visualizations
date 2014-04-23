@@ -1,7 +1,6 @@
-void writeJSONtoCSV(JSONObject jsonData){
+void writeJSONtoCSV(LinkedList<JSONObject> jsonPages){
   PrintWriter OUTPUT = createWriter("nytData.csv");
 
-  JSONArray docs = jsonData.getJSONObject("response").getJSONArray("docs");
   /*
   for(int i = 0; i < pointList.size(); ++i){        
     PVector V = (PVector) pointList.get(i);
@@ -9,15 +8,26 @@ void writeJSONtoCSV(JSONObject jsonData){
   }
   */
 
-  Article[] articles = new Article[docs.size()];
+  LinkedList<Article> articleList = new LinkedList<Article>();
 
-  for (int i = 0; i < docs.size(); i++){
-    Article a = new Article(docs.getJSONObject(i));
-    a.setID(i);
-    articles[i] = a;
+  for (JSONObject jsonData : jsonPages){
+    JSONArray docs = jsonData.getJSONObject("response").getJSONArray("docs");
+
+
+    for (int i = 0; i < docs.size(); i++){
+      Article a = new Article(docs.getJSONObject(i));
+      a.setID(i);
+      articleList.add(a);
+    }
   }
 
-  println("article len: " + docs.size());
+  Article[] articles = new Article[articleList.size()];
+  
+  int k = 0;
+  for (Article a : articleList){
+    articles[k] = a;
+    k++;
+  }
 
   // print first line
 

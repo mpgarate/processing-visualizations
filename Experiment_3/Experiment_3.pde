@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 
 void setup(){
     // prepare stopwords
@@ -6,10 +7,10 @@ void setup(){
     // prepare NYT data
     
     // fetch data as json from API
-    JSONObject nytData = getTodaysArticles();
+    LinkedList<JSONObject> nytDataObjects = getTodaysArticles();
 
     // write to a CSV file suitable for PolarGraph
-    writeJSONtoCSV(nytData);
+    writeJSONtoCSV(nytDataObjects);
 
     // polargraph
     size(650,650);
