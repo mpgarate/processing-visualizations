@@ -1,52 +1,21 @@
-//import org.json.*;
 
-String apiKey = "d7ed4fe0d47715c66dc048c98c282319:15:69301670";
-
-String baseURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?";
-
-void setup() {
-    getArticles();
+void setup(){
+  size(650,650);
+  commonSettings(g);
+  orX=width/2+30; orY=height/2;  //Center of the graph
+  graph=new PolarGraph("data/tabla.csv",orX,orY,R,w,curv_fact,sep);
 }
-
-void draw() {
-
+ 
+void draw(){
+  background(bg);        
+  graph.displayBase();                              //shows the polar display of elements
+  graph.creaConnect();                              //check selected connections and show them
+  if (graph.hover(dist(mouseX,mouseY,orX,orY))){    //show hovered connections
+    cursor(HAND);
+    graph.creaConnect(atan2((mouseY-orY),(mouseX-orX)));
+  }else{
+    cursor(CROSS);
+  }
+ 
 }
-
-void getArticles(){
-
-    String y = year() + "";
-    String d = day() + "";
-    String m = month() + "";
-
-    if (d.length() == 1){
-        d = "0" + d;
-    }
-    if (m.length() == 1){
-        m = "0" + m;
-    }
-
-    String date_today = y + m + d;
-
-    String request = baseURL + "begin_date=" + date_today + "&end_date=" + date_today + "&api-key=" + apiKey;
-
-    println(request);
-
-    //String result = join( loadStrings( request ), "");
-
-    //println( result );
-
-    JSONObject nytData = loadJSONObject(request);
-    JSONObject results = nytData.getJSONObject("response").getJSONObject("meta");
-    println(nytData);
-    int total = results.getInt("hits");
-    println ("There have been " + total + " articles so far today.");
-        
-
-}
-
-// http://api.nytimes.com/svc/search/v1/article?query=O.J.+Simpson&begin_date=19940101&end_date=19960101&api-key=d7ed4fe0d47715c66dc048c98c282319:15:69301670
-// http://api.nytimes.com/svc/search/v1/article?query=obama&begin_date=20020101&end_date=20100101&api-key=d7ed4fe0d47715c66dc048c98c282319:15:69301670
-// http://api.nytimes.com/svc/search/v2/articlesearch.json?q=obama&facet_field=day_of_week&begin_date=20140101&end_date=20150101&api-key=d7ed4fe0d47715c66dc048c98c282319:15:69301670
-
-// http://api.nytimes.com/svc/search/v1/articlesearch.json?begin_date=20140423&end_date=20140424&api-key=d7ed4fe0d47715c66dc048c98c282319:15:69301670
-// http://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=20140423&end_date=20140424&api-key=d7ed4fe0d47715c66dc048c98c282319:15:69301670
+ 
