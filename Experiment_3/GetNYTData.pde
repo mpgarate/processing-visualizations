@@ -1,3 +1,5 @@
+public String total_articles = "";
+
 String getTodaysDate(){
     String y = year() + "";
     String d = day() + "";
@@ -20,10 +22,10 @@ LinkedList<JSONObject> getTodaysArticles(){
     String baseURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?";
     String date_today = getTodaysDate();
 
-    int max_number_of_pages = 7; // gets 30 articles
+    int max_number_of_pages = 5; // gets 50 articles
 
     int i = 0;
-    while (i < max_number_of_pages && articles.size() < 30){
+    while (i < max_number_of_pages){
         String request = baseURL + "page=" + i + "&begin_date=" + date_today + "&end_date=" + date_today + "&api-key=" + apiKey;
 
         println(request);
@@ -32,7 +34,14 @@ LinkedList<JSONObject> getTodaysArticles(){
 
         //println( result );
 
-        JSONObject nytData = loadJSONObject(request);
+        JSONObject nytData;
+        try{
+            nytData = loadJSONObject(request);
+        }
+        catch(Exception e){
+            println("Failed to read from NYT.");
+            continue;
+        }
 
         if (nytData == null){
             break;
@@ -41,7 +50,7 @@ LinkedList<JSONObject> getTodaysArticles(){
         JSONObject results = nytData.getJSONObject("response").getJSONObject("meta");
         //println(nytData);
         int total = results.getInt("hits");
-        println ("There have been " + total + " articles so far today.");
+        total_articles = "There have been " + total + " articles so far today.";
         
         articles.add(nytData);
         i++;

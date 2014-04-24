@@ -12,9 +12,8 @@ void refreshGraph(){
     orX=width/2+30; orY=height/2;  //Center of the graph
     graph=new PolarGraph("nytData.csv",orX,orY,R,w,curv_fact,sep);
 
-    
     stroke(100);
-    text("hello", 50, 200);
+    stroke(100);
 }
 
 void setup(){
@@ -28,9 +27,6 @@ void setup(){
 }
  
 void draw(){
-    if (second() % 20 == 0){
-        refreshGraph();
-    }
     // polargraph
     background(bg);        
     graph.displayBase();                              //shows the polar display of elements
@@ -41,5 +37,11 @@ void draw(){
     }else{
     cursor(CROSS);
     }
+
+    if (second() % 20 == 0){
+        refreshGraph();
+    }
+    fill(0);
+    text(total_articles, 40, 620);
 }
  
