@@ -20,3 +20,5 @@ application.windows64
 application.macosx
 
 **/build-tmp
+
+frames/*
