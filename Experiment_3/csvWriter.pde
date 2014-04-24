@@ -14,10 +14,22 @@ void writeJSONtoCSV(LinkedList<JSONObject> jsonPages){
     }
   }
 
-  Article[] articles = new Article[articleList.size()];
-  
+  LinkedList<Article> unitedArticles = new LinkedList<Article>();
+
+  for (Article a1 : articleList){
+    for (Article a2 : articleList){
+      if (a1 != a2 && a1.hasCommonWordWith(a2)){
+        unitedArticles.add(a1);
+        break;
+      }
+    }
+  }
+
+  Article[] articles = new Article[unitedArticles.size()];
+
+
   int k = 0;
-  for (Article a : articleList){
+  for (Article a : unitedArticles){
     articles[k] = a;
     k++;
   }

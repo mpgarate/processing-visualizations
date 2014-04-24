@@ -20,11 +20,10 @@ LinkedList<JSONObject> getTodaysArticles(){
     String baseURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?";
     String date_today = getTodaysDate();
 
-    int number_of_pages = 3; // gets 30 articles
+    int max_number_of_pages = 7; // gets 30 articles
 
-
-    for (int i = 0 ; i < number_of_pages; i++){
-
+    int i = 0;
+    while (i < max_number_of_pages && articles.size() < 30){
         String request = baseURL + "page=" + i + "&begin_date=" + date_today + "&end_date=" + date_today + "&api-key=" + apiKey;
 
         println(request);
@@ -34,12 +33,18 @@ LinkedList<JSONObject> getTodaysArticles(){
         //println( result );
 
         JSONObject nytData = loadJSONObject(request);
+
+        if (nytData == null){
+            break;
+        }
+
         JSONObject results = nytData.getJSONObject("response").getJSONObject("meta");
         //println(nytData);
         int total = results.getInt("hits");
         println ("There have been " + total + " articles so far today.");
         
         articles.add(nytData);
+        i++;
     }
     return articles;
 }

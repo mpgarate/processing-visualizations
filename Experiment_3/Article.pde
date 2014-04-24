@@ -13,7 +13,7 @@ class Article{
     snippet = jsonObj.getString("snippet");
     title = jsonObj.getJSONObject("headline").getString("main");
 
-    wordsArr = snippet.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
+    wordsArr = title.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
 
     for (String word : wordsArr){
       if ((word.length() > 2) && (isNotStopword(word))){
