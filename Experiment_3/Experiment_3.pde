@@ -43,5 +43,7 @@ void draw(){
     }
     fill(0);
     text(total_articles, 40, 620);
+
+    saveFrame("frames/line-######.png");
 }
  

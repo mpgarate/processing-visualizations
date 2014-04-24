@@ -18,7 +18,7 @@ String getTodaysDate(){
 LinkedList<JSONObject> getTodaysArticles(){
     LinkedList<JSONObject> articles = new LinkedList<JSONObject>();
 
-    String apiKey = "d7ed4fe0d47715c66dc048c98c282319:15:69301670";
+    String apiKey = INSERT_API_KEY_HERE;
     String baseURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?";
     String date_today = getTodaysDate();
 
